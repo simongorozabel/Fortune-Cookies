@@ -1,0 +1,83 @@
+:root {
+  --color-background: white;
+  --color-text: black;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--color-background);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app {
+  max-width: 100%;
+  max-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.quotes {
+  padding: 10px;
+  margin: 0 10%;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  background-color: var(--color-background);
+  color: var(--color-text);
+
+  z-index: 10;
+}
+.quotes p:first-child {
+  font-size: 28px;
+}
+.author {
+  background-color: yellow;
+}
+.button {
+  background-color: black;
+  color: white;
+
+  border: transparent;
+  border-radius: 20px;
+
+  width: 100px;
+  height: 40px;
+
+  position: absolute;
+  top: 20px;
+
+  cursor: pointer;
+}
+.background {
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.image {
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+}
+.image img {
+  max-width: 50%;
+}
